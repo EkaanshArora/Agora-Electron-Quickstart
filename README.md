@@ -2,7 +2,7 @@
 A barebones quickstart app for group video calls on Electron using Agora.io SDK.
 
 ## Prerequisites
-* A recent version of Node.js and NPM/Yarn
+* LTS Node.js and NPM
 * A valid Agora account ([Sign up](https://dashboard.agora.io/) for free)
 
 <div class="alert note">Open the specified ports in <a href="https://docs.agora.io/cn/Agora%20Platform/firewall?platform=All%20Platforms">Firewall Requirements</a> if your network has a firewall.</div>
@@ -35,9 +35,9 @@ Check the end of document if you want to use App ID with certificate.
 ### Steps to run our example
 
 * Download and extract the zip file from the master branch.
-* Run yarn install or use npm to install the app dependencies in the unzipped directory.
-* Navigate to `./src/render.js` and edit line 2 to enter your App ID that we generated.
-* Open a terminal and execute `yarn start` or `npm run start`.
+* Run `npm install` the app dependencies in the unzipped directory. This would fetch a prebuilt release of agora electron sdk.
+* Navigate to `./src/render.js` and edit line 1 to enter your App ID that we generated.
+* Open a terminal and execute `npm run start`.
 
 The app uses `channel-x` as the channel name.
 

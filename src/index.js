@@ -1,16 +1,19 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 
+app.allowRendererProcessReuse = false
+
 if (require('electron-squirrel-startup')) { 
   app.quit();
 }
 
 const createWindow = () => {
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1200,
+    height: 800,
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
+      contextIsolation: false
   },
   });
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
