@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Get started with Video Calling</title>
+        <script defer src="renderer.js"></script>
+    </head>
+    <body>
+        <h2 class="left-align">Get started with Video Calling</h2>
+        <div class="row">
+            <div>
+                <button type="button" id="join">Join</button>
+                <button type="button" id="leave">Leave</button>
+            </div>
+        </div>
+        <!--Add a frame for local video-->
+        <div id="join-channel-local-video" style="width: 400px;height: 200px;"></div>
+        <!--Add a frame for remote video-->
+        <div
+          id="join-channel-remote-video"
+          style="display: grid;grid-template-columns: 400px 400px;gap: 10px;margin: 10px;"
+        ></div>
+    </body>
+</html>
